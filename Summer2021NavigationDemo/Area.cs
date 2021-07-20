@@ -8,5 +8,8 @@ namespace Summer2021NavigationDemo
 {
     public class Area
     {
+        public string Name;
+        public string Description;
+
     }
 }

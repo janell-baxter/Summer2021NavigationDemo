@@ -9,5 +9,6 @@ namespace Summer2021NavigationDemo
     public class Person
     {
         public string Name = "Anonymous Player";
+        public Area currentArea = new Area();
     }
 }

@@ -24,5 +24,15 @@ namespace Summer2021NavigationDemo
         {
             InitializeComponent();
         }
+
+        private void LocationGrid_Loaded(object sender, RoutedEventArgs e)
+        {
+            LocationName.Text = MainWindow.game.Player.currentArea.Name;
+        }
+
+        private void MapButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("Map.xaml", UriKind.Relative));
+        }
     }
 }

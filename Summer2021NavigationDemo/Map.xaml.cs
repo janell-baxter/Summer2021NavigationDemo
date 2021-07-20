@@ -20,6 +20,7 @@ namespace Summer2021NavigationDemo
     /// </summary>
     public partial class Map : Page
     {
+        //Refactor challenge - reduce redundancy in code : )
         public Map()
         {
             InitializeComponent();
@@ -28,6 +29,27 @@ namespace Summer2021NavigationDemo
         private void MapGrid_Loaded(object sender, RoutedEventArgs e)
         {
             PlayerName.Text = MainWindow.game.Player.Name;
+            Area0.Content = MainWindow.game.Areas[0].Name;
+            Area1.Content = MainWindow.game.Areas[1].Name;
+            Area2.Content = MainWindow.game.Areas[2].Name;
+        }
+
+        private void Area0_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.game.Player.currentArea = MainWindow.game.Areas[0];
+            NavigationService.Navigate(new Uri("Location.xaml", UriKind.Relative));
+        }
+
+        private void Area1_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.game.Player.currentArea = MainWindow.game.Areas[1];
+            NavigationService.Navigate(new Uri("Location.xaml", UriKind.Relative));
+        }
+
+        private void Area2_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.game.Player.currentArea = MainWindow.game.Areas[2];
+            NavigationService.Navigate(new Uri("Location.xaml", UriKind.Relative));
         }
     }
 }
