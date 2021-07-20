@@ -29,7 +29,7 @@ namespace Summer2021NavigationDemo
         private void MainWindowGrid_Loaded(object sender, RoutedEventArgs e)
         {
             ContentFrame.Navigate(new Start());
-            //game.Name = "";
+           
         }
     }
 }

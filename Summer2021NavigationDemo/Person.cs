@@ -10,5 +10,17 @@ namespace Summer2021NavigationDemo
     {
         public string Name = "Anonymous Player";
         public Area currentArea = new Area();
+        public List<Item> Inventory;
+
+
+        public string ShowInventoryItemNames()
+        {
+            string output = "";
+            foreach (Item i in Inventory)
+            {
+                output += i.Name + "\n";
+            }
+            return output;
+        }
     }
 }

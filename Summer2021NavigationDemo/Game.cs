@@ -21,7 +21,24 @@ namespace Summer2021NavigationDemo
         
         
         //Game has a Player
-        public Person Player = new Person();
+        public Person Player = new Person
+        {
+            Inventory = new List<Item> 
+            {
+                new Item
+                {
+                    Name = "Pebble",
+                    Description = "Appears to be an ordinary pebble.",
+                    Value = 8.5
+                }, 
+                new Charm
+                {
+                    Name = "Karma Charma",
+                    Description = "Will this improve your karma? Outlook uncertain.",
+                    Value = 900
+                }
+            }
+        };
 
         //other 2 important relationships
         //"is a" - inheritance

@@ -13,6 +13,8 @@
         <Button x:Name="Area0" Content="Button" HorizontalAlignment="Left" Margin="408,20,0,0" VerticalAlignment="Top" Width="167" Height="127" Click="Area0_Click"/>
         <Button x:Name="Area1" Content="Button" HorizontalAlignment="Left" Margin="408,149,0,0" VerticalAlignment="Top" Width="167" Height="127" Click="Area1_Click"/>
         <Button x:Name="Area2" Content="Button" HorizontalAlignment="Left" Margin="408,279,0,0" VerticalAlignment="Top" Width="167" Height="127" Click="Area2_Click"/>
-
+        <ScrollViewer Width="211" Height="158" HorizontalAlignment="Left" Margin="21,129,0,0">
+        <TextBlock x:Name="PlayerInventory"  TextWrapping="Wrap" Text="Inventory" VerticalAlignment="Top" />
+        </ScrollViewer>
     </Grid>
 </Page>

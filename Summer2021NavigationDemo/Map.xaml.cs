@@ -29,6 +29,9 @@ namespace Summer2021NavigationDemo
         private void MapGrid_Loaded(object sender, RoutedEventArgs e)
         {
             PlayerName.Text = MainWindow.game.Player.Name;
+            PlayerInventory.Text = MainWindow.game.Player.ShowInventoryItemNames();
+
+            //buttons
             Area0.Content = MainWindow.game.Areas[0].Name;
             Area1.Content = MainWindow.game.Areas[1].Name;
             Area2.Content = MainWindow.game.Areas[2].Name;
