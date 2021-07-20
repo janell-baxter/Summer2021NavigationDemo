@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media.Imaging;
 
 namespace Summer2021NavigationDemo
 {
@@ -32,7 +33,8 @@ namespace Summer2021NavigationDemo
                 new Area 
                 {
                     Name = "Desert of Sand",
-                    Description="A big desert full of sand. Beautiful and sandy."
+                    Description="A big desert full of sand. Beautiful and sandy.",
+                    Image = new BitmapImage(new Uri("media/Desert.bmp", UriKind.Relative))
                 }
                 );
 

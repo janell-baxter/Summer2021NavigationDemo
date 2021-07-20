@@ -20,6 +20,7 @@ namespace Summer2021NavigationDemo
     /// </summary>
     public partial class Location : Page
     {
+        Area area = MainWindow.game.Player.currentArea;
         public Location()
         {
             InitializeComponent();
@@ -27,7 +28,9 @@ namespace Summer2021NavigationDemo
 
         private void LocationGrid_Loaded(object sender, RoutedEventArgs e)
         {
-            LocationName.Text = MainWindow.game.Player.currentArea.Name;
+            LocationName.Text = area.Name;
+            LocationDescription.Text = area.Description;
+            LocationImage.Source = area.Image;
         }
 
         private void MapButton_Click(object sender, RoutedEventArgs e)
