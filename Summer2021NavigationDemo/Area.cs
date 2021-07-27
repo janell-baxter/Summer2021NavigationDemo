@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
+using static Summer2021NavigationDemo.Utility;
 
 namespace Summer2021NavigationDemo
 {
@@ -11,6 +8,6 @@ namespace Summer2021NavigationDemo
     {
         public string Name;
         public string Description;
-        public BitmapImage Image = new BitmapImage(new Uri("media/PlaceHolderImage.bmp", UriKind.Relative));
+        public BitmapImage Image = MakeRelativeImage("media/PlaceHolderImage.bmp");
     }
 }

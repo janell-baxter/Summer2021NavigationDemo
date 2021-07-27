@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Windows.Media;
 
 namespace Summer2021NavigationDemo
 {
@@ -11,7 +8,8 @@ namespace Summer2021NavigationDemo
         public string Name = "Anonymous Player";
         public Area currentArea = new Area();
         public List<Item> Inventory;
-
+        public SolidColorBrush Status = new SolidColorBrush(Colors.Orchid);
+        public Robot Friend = new Robot();
 
         public string ShowInventoryItemNames()
         {
@@ -22,5 +20,7 @@ namespace Summer2021NavigationDemo
             }
             return output;
         }
+
+        public Item SearchInventory(string term) => Inventory.Find(x => x.Name.Contains(term));
     }
 }

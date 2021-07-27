@@ -66,9 +66,11 @@
       <DependentUpon>Map.xaml</DependentUpon>
     </Compile>
     <Compile Include="Person.cs" />
+    <Compile Include="Robot.cs" />
     <Compile Include="Start.xaml.cs">
       <DependentUpon>Start.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Utility.cs" />
     <Page Include="Location.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -125,6 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="media\PlaceHolderImage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\RobotHeadImage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

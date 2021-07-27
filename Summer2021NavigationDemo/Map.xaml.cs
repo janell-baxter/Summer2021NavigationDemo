@@ -1,17 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Summer2021NavigationDemo
 {
@@ -26,15 +17,54 @@ namespace Summer2021NavigationDemo
             InitializeComponent();
         }
 
-        private void MapGrid_Loaded(object sender, RoutedEventArgs e)
+        private void LoadPlayerInformation()
         {
             PlayerName.Text = MainWindow.game.Player.Name;
             PlayerInventory.Text = MainWindow.game.Player.ShowInventoryItemNames();
+        }
 
+        private void ShowAvatarStatus()
+        {
+            //check Avatar status
+            if (MainWindow.game.Player.currentArea.Name == "Sea of Seawater")
+            {
+                SolidColorBrush green = new SolidColorBrush(Colors.GreenYellow);
+                MainWindow.game.Player.Status = green;
+            }
+            else
+            {
+                SolidColorBrush notgreen = new SolidColorBrush(
+                    Color.FromArgb(
+                        255, //alpha
+                        169, //red
+                        88, //green
+                        125 //blue
+                        )
+                    );
+                MainWindow.game.Player.Status = notgreen;
+            }
+
+
+            //set color status
+            AvatarStatus.Fill = MainWindow.game.Player.Status;
+        }
+        private void ShowLocationButtons()
+        {
             //buttons
             Area0.Content = MainWindow.game.Areas[0].Name;
             Area1.Content = MainWindow.game.Areas[1].Name;
             Area2.Content = MainWindow.game.Areas[2].Name;
+        }
+        private void ShowRobot()
+        {
+            RobotHead.Source = MainWindow.game.Player.Friend.RobotHeadImageSource;
+        }
+        private void MapGrid_Loaded(object sender, RoutedEventArgs e)
+        {
+            LoadPlayerInformation();
+            ShowAvatarStatus();
+            ShowLocationButtons();
+            ShowRobot();
         }
 
         private void Area0_Click(object sender, RoutedEventArgs e)
