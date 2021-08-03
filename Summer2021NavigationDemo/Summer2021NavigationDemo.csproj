@@ -58,6 +58,7 @@
     <Compile Include="Area.cs" />
     <Compile Include="Charm.cs" />
     <Compile Include="Game.cs" />
+    <Compile Include="InfinityStone.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Location.xaml.cs">
       <DependentUpon>Location.xaml</DependentUpon>

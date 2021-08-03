@@ -10,6 +10,7 @@ namespace Summer2021NavigationDemo
         public List<Item> Inventory;
         public SolidColorBrush Status = new SolidColorBrush(Colors.Orchid);
         public Robot Friend = new Robot();
+        public InfinityStone Stone = new InfinityStone();
 
         public string ShowInventoryItemNames()
         {
@@ -22,5 +23,15 @@ namespace Summer2021NavigationDemo
         }
 
         public Item SearchInventory(string term) => Inventory.Find(x => x.Name.Contains(term));
+
+        public Person()
+        {
+            Stone.Color = StoneColor.Blue;
+
+            if (Stone.Color == StoneColor.Purple)
+            {
+
+            }
+        }
     }
 }
