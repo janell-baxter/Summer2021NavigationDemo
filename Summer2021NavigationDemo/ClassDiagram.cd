@@ -55,7 +55,7 @@
     <Position X="5.5" Y="8" Width="4" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAIAAAAACCCAAAAAAAAAAAKCBAAAAAAAA=</HashCode>
-      <FileName>Map.xaml.cs</FileName>
+      <FileName>Main.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>

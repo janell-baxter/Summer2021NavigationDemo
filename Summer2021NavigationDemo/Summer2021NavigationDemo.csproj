@@ -62,8 +62,8 @@
     <Compile Include="Location.xaml.cs">
       <DependentUpon>Location.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Map.xaml.cs">
-      <DependentUpon>Map.xaml</DependentUpon>
+    <Compile Include="Main.xaml.cs">
+      <DependentUpon>Main.xaml</DependentUpon>
     </Compile>
     <Compile Include="Person.cs" />
     <Compile Include="Robot.cs" />
@@ -87,7 +87,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Map.xaml">
+    <Page Include="Main.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

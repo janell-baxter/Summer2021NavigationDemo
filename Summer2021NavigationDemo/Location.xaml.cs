@@ -26,7 +26,7 @@ namespace Summer2021NavigationDemo
 
         private void MapButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("Map.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("Main.xaml", UriKind.Relative));
         }
     }
 }

@@ -10,9 +10,9 @@
 
     <Grid x:Name="LocationGrid" Loaded="LocationGrid_Loaded">
         <TextBlock x:Name="LocationName" HorizontalAlignment="Left" Margin="27,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Text="Location name ..."/>
-        <Button x:Name="MapButton" Content="Open Map" HorizontalAlignment="Left" Margin="260,22,0,0" VerticalAlignment="Top" Width="85" Click="MapButton_Click"/>
+        <Button x:Name="MapButton" Content="Leave Location" HorizontalAlignment="Left" Margin="27,305,0,0" VerticalAlignment="Top" Width="85" Click="MapButton_Click"/>
         <TextBlock x:Name="LocationDescription" HorizontalAlignment="Left" Margin="27,63,0,0" TextWrapping="Wrap" Text="Location description ... " VerticalAlignment="Top" Height="68" Width="165"/>
-        <Image x:Name="LocationImage" HorizontalAlignment="Left" Height="400" Margin="390,10,0,0" VerticalAlignment="Top" Width="400"/>
+        <Image x:Name="LocationImage" HorizontalAlignment="Left" Height="400" Margin="294,10,0,0" VerticalAlignment="Top" Width="400"/>
 
     </Grid>
 </Page>
